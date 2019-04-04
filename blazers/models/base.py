@@ -13,5 +13,5 @@ class LibraryObject(object):
         if clsName not in blazers.db.DB:
             raise Exception('Object cannot be written into database')
         blazers.db.DB[self.__class__.__name__].append(self)
-        print blazers.db.DB
+        blazers.db.display()
         return self

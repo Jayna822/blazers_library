@@ -6,8 +6,11 @@ from .properties import StringProperty
 
 class Member(LibraryObject):
 
-    def __init__(self, emailaddress):
-        self._emailaddress = emailaddress
+    def __init__(self, emailaddress, first_name=None, last_name=None):
+        self.emailaddress = emailaddress
+        self.first_name = first_name
+        self.last_name = last_name
+
         self._items = []
         self.fines = 0.0
 

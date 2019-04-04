@@ -27,3 +27,13 @@ def find(objtype, **kwargs):
             if matching_attrs == len(kwargs):
                 matching_objs.append(obj)
         return matching_objs
+
+def display():
+    print '---- Blazers Library Inventory ----\n'
+    for itemtype, items in DB.items():
+        if items:
+            print '*** %ss ***'%itemtype
+            print '-'*30
+            for item in items:
+                print item
+            print '\n'

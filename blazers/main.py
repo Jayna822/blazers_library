@@ -1,12 +1,16 @@
 import datetime
 
 from managers import membermgr, itemmgr
+from bootstrap import bootstrap
 
 # from models.members import Member
 # from models.items import Book, Movie
 
 
 def main():
+
+    bootstrap()
+
     m1 = membermgr.create('jayna822@gmail.com')
     m2 = membermgr.create('another_email@gmail.com')
     # m3 = membermgr.create('jayna822@gmail.com')

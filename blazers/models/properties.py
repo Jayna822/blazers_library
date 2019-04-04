@@ -29,7 +29,7 @@ class StringProperty(MyProperty):
     def __set__(self, obj, value):
         if self.fset is None:
             raise AttributeError("can't set attribute")
-        if type(value) != str:
+        if value and type(value) != str:
             raise ValueError("%s must be a string"%(self.fset.__name__))
         self.fset(obj, value)
 
