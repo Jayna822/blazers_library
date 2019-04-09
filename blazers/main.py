@@ -3,6 +3,8 @@ import datetime
 from managers import membermgr, itemmgr
 from bootstrap import bootstrap
 
+import django
+
 # from models.members import Member
 # from models.items import Book, Movie
 

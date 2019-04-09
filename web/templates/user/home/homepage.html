@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blazers Library</title>
+</head>
+<body>
+    {% block content %}
+    <h1>Welcome to Blazers Library!</h1>
+    <br>
+    <h3>Announcments</h3>
+    {% for announcement in announcements %}
+    <div><p>{{ announcement }}</p></div>
+    {% endfor %}
+    <br>
+    <h3>New Books</h3>
+    <ul>
+        {% for book in new_books %}
+        <li>{{ book }}</li>
+        {% endfor %}
+    </ul>
+
+    {% endblock %}
+</body>
+</html>
+
+
