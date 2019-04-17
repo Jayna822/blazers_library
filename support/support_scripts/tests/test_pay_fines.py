@@ -1,7 +1,7 @@
 import unittest
 
 from blazers.managers import membermgr
-from blazers.support import pay_fines
+from .. import pay_fines
 
 
 class PayFinesTest(unittest.TestCase):
